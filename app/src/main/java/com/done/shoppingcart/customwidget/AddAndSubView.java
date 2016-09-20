@@ -33,6 +33,12 @@ public class AddAndSubView extends LinearLayout {
         init(attrs, defStyle);
     }
 
+    @Override
+    protected void onLayout(boolean changed, int l, int t, int r, int b) {
+        super.onLayout(changed, l, t, r, b);
+        
+    }
+
     private void init(AttributeSet attrs, int defStyle) {
         // Load attributes
         final TypedArray a = getContext().obtainStyledAttributes(
