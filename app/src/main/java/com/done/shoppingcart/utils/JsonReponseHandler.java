@@ -9,8 +9,7 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public class JsonReponseHandler
-{
+public class JsonReponseHandler {
 
 	/** listKey=pageEntity */
 	public static <T> List<T> getListFromJsonWithPageEntity(Object response, Type type)
@@ -25,10 +24,6 @@ public class JsonReponseHandler
 	 *            服务器的HTTP响应，JSON数据，之所以用object，是希望将msg.obj直接传送过来
 	 * @param type
 	 *            List的数据类型，如List<Comment>
-	 * @param baseAdapter
-	 *            更新ListView的适配器
-	 * @param dialog
-	 *            进度对话框
 	 * @author 陈福荣, 吴格非
 	 */
 	public static <T> List<T> getListFromJson(Object response, Type type, String listKey)
