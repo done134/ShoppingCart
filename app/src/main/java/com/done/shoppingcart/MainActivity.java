@@ -9,6 +9,11 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.done.shoppingcart.entity.ShoppingCartBean;
+
+import java.util.ArrayList;
+import java.util.List;
+
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
@@ -36,6 +41,9 @@ public class MainActivity extends AppCompatActivity {
     TextView goodsCount;
     @BindView(R.id.bottom_bar)
     RelativeLayout bottomBar;
+
+    private List<ShoppingCartBean> ShoppingCartList = new ArrayList<>();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
