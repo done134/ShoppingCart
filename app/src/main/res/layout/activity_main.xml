@@ -37,5 +37,87 @@
             android:text="购物车为空"/>
     </LinearLayout>
 
+    <ExpandableListView
+        android:id="@+id/shopping_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:layout_above="@+id/bottom_bar"
+        android:longClickable="true"
+        android:listSelector="@android:color/transparent"
+        android:dividerHeight="0.5dp" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@android:color/darker_gray"/>
+
+        <CheckBox
+            android:id="@+id/select_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="全选"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvCountMoney"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="@string/count_money"
+                    android:textColor="#ff2600"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/tvPostPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="right"
+                    android:text="不含运费"
+                    android:textColor="#666666"
+                    android:textSize="11sp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#ff5000"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="5dp"
+                android:text="@string/count_goods"
+                android:textColor="#FFF"
+                android:textSize="14sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
 
 </RelativeLayout>
