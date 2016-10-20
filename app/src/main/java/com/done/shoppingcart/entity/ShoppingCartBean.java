@@ -46,7 +46,7 @@ public class ShoppingCartBean {
         return isGroupSelected;
     }
 
-    public void setGroupSelected(boolean groupSelected) {
+    public void setIsGroupSelected(boolean groupSelected) {
         isGroupSelected = groupSelected;
     }
 
@@ -209,7 +209,7 @@ public class ShoppingCartBean {
             return isChildSelected;
         }
 
-        public void setChildSelected(boolean childSelected) {
+        public void setIsChildSelected(boolean childSelected) {
             isChildSelected = childSelected;
         }
 
